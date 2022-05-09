@@ -14,10 +14,10 @@ export default function Layout({ children, IndexPage, link }) {
       <header>
         {!link && (
         <>
-        <Link href="/AboutUs">
+        <Link href="/aboutUs">
           <p>About us</p>
           </Link>
-          <Link href="/TermsOfUse">
+          <Link href="/termsOfUse">
             <p>Terms of use</p>
             </Link>
             </>
