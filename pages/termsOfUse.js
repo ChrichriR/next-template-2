@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
-import Layout, { siteTitle } from "../components/layout";
+import Layout, { siteTitle } from "../components/Layout";
 
 export default function TermsOfUse() {
   const [checked, setChecked] = useState(false);

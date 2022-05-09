@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useEffect } from "react";
-import Layout, { siteTitle } from "../components/layout";
+import Layout, { siteTitle } from "../components/Layout";
 
 export default function IndexPage() {
   useEffect(() => {
@@ -8,7 +8,7 @@ export default function IndexPage() {
   }, []);
 
   return (
-    <Layout IndexPage>
+    <Layout indexPage>
       <Head>
         <title>{siteTitle}</title>
       </Head>

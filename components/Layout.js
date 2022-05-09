@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Head from "next/head";
-import styles from './layout.module.css';
+import styles from './Layout.module.css';
 
 export const siteTitle = "next-template-2";
 
-export default function Layout({ children, IndexPage, link }) {
+export default function Layout({ children, indexPage, link }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -25,7 +25,7 @@ export default function Layout({ children, IndexPage, link }) {
       </header>
       <main>{children}</main>
       <footer>
-        {!IndexPage && (
+        {!indexPage && (
           <Link href="/">
             <p>← Back to home</p>
           </Link>
