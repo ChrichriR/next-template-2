@@ -11,8 +11,8 @@ export default function AboutUs() {
       <Image
         priority
         src="/images/profile.jpg"
-        height={144}
-        width={144}
+        height={50}
+        width={50}
         alt="Christelle"
       />
       <div>
