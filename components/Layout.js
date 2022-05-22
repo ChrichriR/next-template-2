@@ -2,14 +2,13 @@ import Link from "next/link";
 import Head from "next/head";
 import styles from './Layout.module.css';
 
-export const siteTitle = "next-template-2";
 
-export default function Layout({ children, indexPage, link }) {
+export default function Layout({ children, indexPage, link, pageTitle }) {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="og:title" content={siteTitle} key="title" />
+        <title>{pageTitle ? `${pageTitle} = ` : ""} Our Website</title>
       </Head>
       <header>
         {!link && (

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
-import Layout, { siteTitle } from "../components/Layout";
+import Layout from "../components/Layout";
 
 export default function TermsOfUse() {
   const [checked, setChecked] = useState(false);
@@ -15,10 +15,7 @@ export default function TermsOfUse() {
       : alert("Dommage, pas de cookie pour vous ...");
   };
   return (
-    <Layout link>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
+    <Layout link pageTitle="Terms of use">
       <div>Venez du côté obscur, on a des cookies !</div>
       <br />
       <label>

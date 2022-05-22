@@ -1,19 +1,16 @@
 import Head from "next/head";
 import Image from "next/image";
-import Layout, { siteTitle } from "../components/Layout";
+import Layout from "../components/Layout";
 
 export default function AboutUs() {
   return (
-    <Layout link>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
+    <Layout link pageTitle="About us">
       <Image
         priority
         src="/images/profile.jpg"
-        height={50}
-        width={50}
-        alt="Christelle"
+        height={150}
+        width={150}
+        alt="Dragon Eye"
       />
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. A quia est enim
